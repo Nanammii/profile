@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Title</title>
+</head>
+<body class="container">
+<header class="header">
+  <div class="header__wrapper-top">
+    <a class="header__link-back" href="profile.html">User pages - Profile</a>
+    <ul class="header__list">
+      <li>
+        <a>Statistics</a>
+      </li>
+      <li>
+        <a>Invoices</a>
+      </li>
+      <li>
+        <a>Schedule</a>
+      </li>
+    </ul>
+  </div>
+  <div class="header__wrapper-bottom">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li>
+          <a class="navigation__link navigation__link--active" href="index.html">Activity</a>
+        </li>
+        <li>
+          <a class="navigation__link" href="map.html">Map</a>
+        </li>
+        <li>
+          <a class="navigation__link" href="time.html">Time</a>
+        </li>
+      </ul>
+      <ul class="navigation__list">
+        <li>Notes</li>
+        <li>Friends</li>
+        <li>Photos</li>
+        <li></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main-container">
+  <div class="main-container__posts">
+    <section class="post">
+      <div class="post__wrapper">
+        <img class="post__image" src="./img/post-image-01.jpeg" alt="Post image" width="1016" height="424">
+        <span>Jason Anderson commented:</span>
+        <div>
+          <p>Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse in the sea. Keep love in your heart. A life without it is like a sunless garden when the flowers are dead. Because summer is passion, memories, light breeze, the sun that appears on the skin and caresses the face. </p>
+          <span>– Jason, 10:30 am</span>
+        </div>
+        <div>
+          <span>432</span>
+          <span>47</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="post">
+      <div class="post__wrapper post__wrapper--close">
+        <p>Sunset Sunset Sunset</p>
+        <p class="time-info">
+          <span>53 minutes ago</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="post">
+      <div class="post__wrapper post__wrapper--close">
+        <p>Morning of Siberia</p>
+        <p class="time-info">
+          <span>56 minutes ago</span>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <aside class="main-container__aside">
+    <section class="profile-info">
+      <img class="profile__image" src="img/avatar-hanna.jpeg" alt="Avatar User" width="2048" height="2560" />
+      <span>Hanna Dorman</span>
+      <span>UX/UI designer</span>
+      <ul>
+        <li>tg</li>
+        <li>hh</li>
+        <li>tw</li>
+      </ul>
+    </section>
+    <nav class="profile-info">
+      <h2>Navigation</h2>
+      <ul>
+        <li>
+          <a href="profile.html">My profile</a>
+        </li>
+        <li>
+          <span>Balance</span>
+          <span>$ 1,430</span>
+        </li>
+        <li>
+          <span>Connections</span>
+          <span>29</span>
+        </li>
+        <li>Friends</li>
+      </ul>
+      <ul>
+        <li>
+          <span>Events</span>
+          <span>45</span>
+        </li>
+        <li>Account settings</li>
+      </ul>
+    </nav>
+    <section class="profile-info">
+      <h2>Share your thoughts</h2>
+      <form>
+        <textarea name="thought" placeholder="Enter your message..."></textarea>
+        <button type="submit">Save</button>
+      </form>
+    </section>
+  </aside>
+
+
+</main>
+<script src="js/main.js" type="module"></script>
+</body>
+</html>

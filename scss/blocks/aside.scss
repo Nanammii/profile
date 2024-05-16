@@ -1,0 +1,17 @@
+.profile-info {
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 35px;
+  gap: 16px;
+  background-color: #ffffff;
+}
+
+.profile__image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+}
