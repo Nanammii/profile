@@ -13,42 +13,53 @@
 </head>
 <body class="container">
 <header class="header">
-  <div class="header__wrapper-top">
-    <a class="header__link-back">User pages - Profile</a>
-    <ul class="header__list">
+  <div class="header__wrapper d-flex justify-content-between shadow">
+    <a class="header__link-back align-self-center d-sm-block" href="profile.html"><span class="fw-medium">User pages</span> - Profile</a>
+    <ul class="header__list d-flex">
       <li>
-        <a>Statistics</a>
+        <a class="menu__link d-sm-block">Statistics</a>
       </li>
       <li>
-        <a>Invoices</a>
+        <a class="menu__link menu__link--invoices d-sm-block">Invoices</a>
       </li>
       <li>
-        <a>Schedule</a>
+        <a class="menu__link menu__link--schedule d-sm-block">Schedule</a>
       </li>
     </ul>
   </div>
-  <div class="header__wrapper-bottom">
-    <nav class="navigation">
-      <ul class="navigation__list">
+  <div class="header__wrapper-bottom d-flex justify-content-between bg-light shadow">
+    <nav class="d-flex justify-content-between w-100">
+      <ul class="d-flex">
         <li>
-          <a class="navigation__link navigation__link--active" href="index.html">Activity</a>
+          <a class="navigation__link d-block position-relative" href="index.html">Activity</a>
         </li>
         <li>
-          <a class="navigation__link" href="map.html">Map</a>
+          <a class="navigation__link navigation__link--map d-block position-relative" href="map.html">Map</a>
         </li>
         <li>
-          <a class="navigation__link" href="time.html">Time</a>
+          <a class="navigation__link navigation__link--time d-block position-relative" href="time.html">Time</a>
         </li>
       </ul>
-      <ul class="navigation__list">
-        <li>Notes</li>
-        <li>Friends</li>
-        <li>Photos</li>
-        <li></li>
+      <ul class="d-flex">
+        <li>
+          <a class="navigation__link navigation__link--notes  d-block position-relative" href="#">Notes</a>
+        </li>
+        <li>
+          <a class="navigation__link navigation__link--people d-block position-relative" href="#">Friends</a>
+        </li>
+        <li>
+          <a class="navigation__link navigation__link--photos  d-block position-relative" href="#">Photos</a>
+        </li>
+        <li>
+          <a class="link-settings d-block position-relative" href="#">
+            <img src="./img/icons/arrow-down.svg" alt="Arrow down" />
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
 </header>
+
 <main>
   <section class="skills">
     <h2>My skills</h2>
