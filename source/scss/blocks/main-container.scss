@@ -1,18 +1,4 @@
 .main-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 32px;
-}
-
-.main-container__posts {
-  padding-left: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.main-container__aside {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
