@@ -2,20 +2,6 @@ body {
   width: 100%;
   min-width: 1440px;
   min-height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  font-style: normal;
-  color: $main-text-color;
-  background-color: $main-back-color;
-  box-sizing: border-box;
-}
-
-*, ::after, ::before {
-  box-sizing: inherit
 }
 
 ul {
@@ -34,22 +20,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
 }

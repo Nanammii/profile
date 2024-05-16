@@ -1,0 +1,24 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+/* Change theme-colors */
+$theme-colors: (
+  primary: #234d7b,
+  secondary: #3b3c3e,
+  success: #1e6111,
+  info:  #64c3d2,
+  warning: #f5e74a,
+  danger: #820410
+);
+
+$font-family-sans-serif: "Roboto", "Arial", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.14; // 16px / 14px
+$body-color: #505050;
+$body-bg: #f1f1f1;
+
+$box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+
+@import "blocks/header";
+
+@import "node_modules/bootstrap/scss/bootstrap";
