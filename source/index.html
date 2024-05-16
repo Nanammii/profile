@@ -11,11 +11,11 @@
     rel="stylesheet">
   <title>Title</title>
 </head>
-<body class="container">
+<body>
 <header class="header">
-  <div class="header__wrapper-top">
-    <a class="header__link-back" href="profile.html">User pages - Profile</a>
-    <ul class="header__list">
+  <div class="header__wrapper d-flex justify-content-between shadow">
+    <a class="header__link-back" href="profile.html"><span>User pages</span> - Profile</a>
+    <ul class="header__list d-flex gap-2">
       <li>
         <a>Statistics</a>
       </li>
@@ -27,9 +27,9 @@
       </li>
     </ul>
   </div>
-  <div class="header__wrapper-bottom">
-    <nav class="navigation">
-      <ul class="navigation__list">
+  <div class="header__wrapper-bottom d-flex justify-content-between bg-light mb-3">
+    <nav class="navigation w-300">
+      <ul class="navigation__list d-flex gap-3">
         <li>
           <a class="navigation__link navigation__link--active" href="index.html">Activity</a>
         </li>
@@ -40,7 +40,7 @@
           <a class="navigation__link" href="time.html">Time</a>
         </li>
       </ul>
-      <ul class="navigation__list">
+      <ul class="navigation__list d-flex gap-3">
         <li>Notes</li>
         <li>Friends</li>
         <li>Photos</li>
@@ -51,10 +51,10 @@
 </header>
 
 <main class="main-container">
-  <div class="main-container__posts">
-    <section class="post">
+  <div class="main-container__posts col-lg-9 d-flex flex-column gap-3 px-4">
+    <section class="post bg-white p-4">
       <div class="post__wrapper">
-        <img class="post__image" src="./img/post-image-01.jpeg" alt="Post image" width="1016" height="424">
+        <img class="post__image img-fluid" src="./img/post-image-01.jpeg" alt="Post image" width="1016" height="424">
         <span>Jason Anderson commented:</span>
         <div>
           <p>Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse in the sea. Keep love in your heart. A life without it is like a sunless garden when the flowers are dead. Because summer is passion, memories, light breeze, the sun that appears on the skin and caresses the face. </p>
@@ -67,39 +67,37 @@
       </div>
     </section>
 
-    <section class="post">
-      <div class="post__wrapper post__wrapper--close">
+    <section class="post mb-4 bg-white p-3 d-flex justify-content-between">
         <p>Sunset Sunset Sunset</p>
         <p class="time-info">
           <span>53 minutes ago</span>
         </p>
-      </div>
     </section>
 
-    <section class="post">
-      <div class="post__wrapper post__wrapper--close">
+    <section class="post mb-4 bg-white p-3 d-flex justify-content-between">
+
         <p>Morning of Siberia</p>
         <p class="time-info">
           <span>56 minutes ago</span>
         </p>
-      </div>
+
     </section>
   </div>
 
-  <aside class="main-container__aside">
-    <section class="profile-info">
-      <img class="profile__image" src="img/avatar-hanna.jpeg" alt="Avatar User" width="2048" height="2560" />
+  <aside class="main-container__aside col-md-3">
+    <section class="profile-info text-center mb-4 bg-white p-4">
+      <img class="profile__image rounded-circle mb-3" src="img/avatar-hanna.jpeg" alt="Avatar User" width="2048" height="2560" />
       <span>Hanna Dorman</span>
       <span>UX/UI designer</span>
-      <ul>
+      <ul  class="list-unstyled">
         <li>tg</li>
         <li>hh</li>
         <li>tw</li>
       </ul>
     </section>
-    <nav class="profile-info">
+    <nav class="profile-info mb-4 bg-white p-4">
       <h2>Navigation</h2>
-      <ul>
+      <ul  class="list-unstyled">
         <li>
           <a href="profile.html">My profile</a>
         </li>
@@ -113,7 +111,7 @@
         </li>
         <li>Friends</li>
       </ul>
-      <ul>
+      <ul  class="list-unstyled">
         <li>
           <span>Events</span>
           <span>45</span>
@@ -121,17 +119,20 @@
         <li>Account settings</li>
       </ul>
     </nav>
-    <section class="profile-info">
+    <section class="profile-info bg-white p-4">
       <h2>Share your thoughts</h2>
       <form>
-        <textarea name="thought" placeholder="Enter your message..."></textarea>
-        <button type="submit">Save</button>
+        <div class="mb-3">
+          <textarea class="form-control" name="thought" placeholder="Enter your message..."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
       </form>
     </section>
   </aside>
 
 
 </main>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="module"></script>
 <script src="js/main.js" type="module"></script>
 </body>
 </html>

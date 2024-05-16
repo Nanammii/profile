@@ -2,12 +2,29 @@
   background-color: #ffffff;
 }
 
-.header__wrapper-top,
-.header__wrapper-bottom {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 32px 0 64px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+.header__wrapper {
+  padding: 20px 32px;
+  margin-bottom: -1px;
+}
+
+.header__link-back {
+  position: relative;
+  padding-left: 32px;
+  font-size: 18px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -2px;
+    left: 0;
+    background: url("../../img/icons/arrow-back.svg") no-repeat;
+  }
+
+  span {
+    font-weight: 500;
+  }
 }
 
 .header__wrapper-bottom {

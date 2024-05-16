@@ -1,7 +1,8 @@
-@import "global/variables";
-@import "global/global";
 
-@import "blocks/header";
 @import "blocks/main-container";
 @import "blocks/post";
 @import "blocks/aside";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "custom";
+@import "global/global";

@@ -20,6 +20,7 @@
   "type": "module",
   "dependencies": {
     "autoprefixer": "^10.4.19",
+    "bootstrap": "^5.3.3",
     "browser-sync": "^3.0.2",
     "gulp": "^5.0.0",
     "gulp-dart-sass": "^1.1.0",
