@@ -25,7 +25,7 @@
 .post__time {
   position: relative;
 }
-.post__time:before {
+.post__time::before {
   content: "";
   position: absolute;
   top: 0;
@@ -11945,7 +11945,7 @@ textarea.form-control-lg {
   padding-left: 32px;
   font-size: 18px;
 }
-.header__link-back:before {
+.header__link-back::before {
   content: "";
   position: absolute;
   width: 24px;
@@ -11969,7 +11969,7 @@ textarea.form-control-lg {
   position: relative;
   padding-top: 32px;
 }
-.menu__link:before {
+.menu__link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -11978,17 +11978,17 @@ textarea.form-control-lg {
   height: 24px;
   background: url("../../img/icons/statistics-icon.svg") no-repeat;
 }
-.menu__link--invoices:before {
+.menu__link--invoices::before {
   background: url("../../img/icons/invoices-icon.svg") no-repeat;
 }
-.menu__link--schedule:before {
+.menu__link--schedule::before {
   background: url("../../img/icons/schedule-icon.svg") no-repeat;
 }
 
 .navigation__link {
   padding: 12px 16px 12px 44px;
 }
-.navigation__link:before {
+.navigation__link::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -11997,19 +11997,19 @@ textarea.form-control-lg {
   left: 16px;
   background: url("../../img/icons/activity-icon.svg") no-repeat;
 }
-.navigation__link--map:before {
+.navigation__link--map::before {
   background: url("../../img/icons/map-icon.svg") no-repeat;
 }
-.navigation__link--time:before {
+.navigation__link--time::before {
   background: url("../../img/icons/time-icon.svg") no-repeat;
 }
-.navigation__link--notes:before {
+.navigation__link--notes::before {
   background: url("../../img/icons/notes-icon.svg") no-repeat;
 }
-.navigation__link--people:before {
+.navigation__link--people::before {
   background: url("../../img/icons/people-icon.svg") no-repeat;
 }
-.navigation__link--photos:before {
+.navigation__link--photos::before {
   background: url("../../img/icons/photos-icon.svg") no-repeat;
 }
 .navigation__link:hover, .navigation__link--active {
@@ -12019,7 +12019,7 @@ textarea.form-control-lg {
 .link-settings {
   padding: 8px 8px 8px 36px;
 }
-.link-settings:before {
+.link-settings::before {
   content: "";
   position: absolute;
   width: 20px;
