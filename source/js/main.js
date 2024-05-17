@@ -1,3 +1,4 @@
+// Select active link
 document.addEventListener('DOMContentLoaded', () => {
   const location = window.location.href;
   const navLinks = document.querySelectorAll('.navigation__link')
@@ -7,3 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 })
+
+
+
