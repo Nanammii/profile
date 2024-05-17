@@ -6,6 +6,8 @@ $font-size-base: 14px;
 $line-height-base: 1.14; // 16px / 14px
 $body-color: #505050;
 $body-bg: #f1f1f1;
+$secondary: #8f8f8f;
+$border-color: #d3d8de;
 
 $box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 
@@ -15,6 +17,10 @@ $box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 
 .aside-width {
   width: 264px;
+}
+
+.fs-7 {
+  font-size: 18px;
 }
 
 @import "blocks/header";
