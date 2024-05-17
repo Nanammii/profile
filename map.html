@@ -9,12 +9,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=74548dbc-d9dc-4759-915f-d378ac73a45c&lang=ru_RU"
+          type="text/javascript">
+  </script>
   <title>Title</title>
 </head>
 <body class="container">
 <header class="header">
   <div class="header__wrapper d-flex justify-content-between shadow">
-    <a class="header__link-back align-self-center d-sm-block" href="profile.html"><span class="fw-medium">User pages</span> - Profile</a>
+    <a class="header__link-back align-self-center d-sm-block" href="profile.html"><span
+      class="fw-medium">User pages</span> - Profile</a>
     <ul class="header__list d-flex">
       <li>
         <a class="menu__link d-sm-block">Statistics</a>
@@ -52,7 +56,7 @@
         </li>
         <li>
           <a class="link-settings d-block position-relative" href="#">
-            <img src="./img/icons/arrow-down.svg" alt="Arrow down" />
+            <img src="./img/icons/arrow-down.svg" alt="Arrow down"/>
           </a>
         </li>
       </ul>
@@ -60,8 +64,32 @@
   </div>
 </header>
 
-<main></main>
+<main class="padding-inline">
+  <section class="d-flex flex-column bg-white pb-3">
+    <div class="d-flex justify-content-between align-items-center padding-inline py-3 fs-6">
+      <span>Basic map</span>
+      <div class="d-flex gap-2">
+        <button class="btn p-0 border-0">
+          <img src="./img/icons/arrow-down.svg" alt="Open map" width="24" height="24"/>
+        </button>
+        <button class="btn p-0 border-0">
+          <img src="./img/icons/update-icon.svg" alt="Update map" width="24" height="24"/>
+        </button>
+        <button class="btn p-0 border-0">
+          <img src="./img/icons/close-icon.svg" alt="Close map" width="24" height="24"/>
+        </button>
+      </div>
+    </div>
 
+    <div class="map__wrapper d-flex justify-content-center align-items-center padding-inline pb-3">
+      <div class="map__loader"></div>
+      <div class="map__container w-100 d-none" id="map"></div>
+    </div>
+  </section>
+</main>
+
+
+<script src="js/map.js" type="module"></script>
 <script src="js/main.js" type="module"></script>
 </body>
 </html>

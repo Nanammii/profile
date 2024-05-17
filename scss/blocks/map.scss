@@ -1,0 +1,21 @@
+.map__wrapper,
+.map__container {
+  min-height: 480px;
+}
+
+.map__loader {
+  width: 200px;
+  height: 200px;
+  background: url("../img/icons/loader-icon.svg") no-repeat;
+  background-size: 200px 200px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
