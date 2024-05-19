@@ -59,7 +59,36 @@
     </nav>
   </div>
 </header>
+<main class="padding-inline">
+  <section class="d-flex flex-column bg-white pb-3">
+    <div class="d-flex justify-content-between align-items-center padding-inline py-3 fs-6">
+      <span>Timer</span>
+      <div class="d-flex gap-2">
+        <button class="btn p-0 border-0" id="open">
+          <img src="./img/icons/arrow-down.svg" alt="Open timer" width="24" height="24"/>
+        </button>
+        <button class="btn p-0 border-0" id="update">
+          <img src="./img/icons/update-icon.svg" alt="Update timer" width="24" height="24"/>
+        </button>
+        <button class="btn p-0 border-0" id="close">
+          <img src="./img/icons/close-icon.svg" alt="Close timer" width="24" height="24"/>
+        </button>
+      </div>
+    </div>
 
+    <div class="d-flex justify-content-center align-items-center padding-inline pb-3"  id="timer">
+      <div class="w-100 pt-3">
+        <span id="hours">00</span>
+        :
+        <span id="minutes">00</span>
+        :
+        <span id="seconds">00</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/timer.js" type="module"></script>
 <script src="js/main.js" type="module"></script>
 </body>
 </html>

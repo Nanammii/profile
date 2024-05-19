@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     );
 
-    map.controls.remove('zoomControl');
     map.controls.remove('geolocationControl');
     map.controls.remove('routeButtonControl');
     map.controls.remove('trafficControl');
