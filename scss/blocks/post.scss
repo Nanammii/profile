@@ -46,3 +46,23 @@
     background-color: #d3d8de;
   }
 }
+
+.post__icon {
+  padding-left: 32px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/eye-icon.svg") no-repeat;
+  }
+
+  &--comment::before {
+    background: url("../img/icons/comment-icon.svg") no-repeat;
+  }
+}
