@@ -1,18 +1,8 @@
 .post__wrapper {
   min-width: 1080px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 32px 32px;
-
-  &--close {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 16px 32px;
-  }
 }
 
 .post__time {
-  position: relative;
 
   &::before {
     content: "";
@@ -27,5 +17,32 @@
 
 .post__image {
   max-height: 424px;
-  object-fit: cover;
+}
+
+.post__title {
+  padding-left: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/comment-icon.svg") no-repeat;
+  }
+}
+
+.post__comment {
+  padding-left: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #d3d8de;
+  }
 }

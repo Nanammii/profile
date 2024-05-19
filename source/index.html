@@ -73,17 +73,19 @@
             </button>
           </span>
       </div>
-      <div class="post__wrapper">
-        <img class="post__image img-fluid" src="./img/post-image-01.jpeg" alt="Post image" width="1016" height="424">
-        <span>Jason Anderson commented:</span>
-        <div>
+      <div class="post__wrapper d-flex flex-column padding-inline pb-3">
+        <img class="post__image object-fit-cover" src="./img/post-image-01.jpeg" alt="Post image" width="1016" height="424">
+        <div class="post__title position-relative pt-3 pb-3">
+          <span class="d-block py-1"><span class="text-primary">Jason Anderson</span> commented:</span>
+        </div>
+        <div class="post__comment position-relative d-flex flex-column mb-3">
           <p>Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse in the sea. Keep love in your
             heart. A life without it is like a sunless garden when the flowers are dead. Because summer is passion,
             memories, light breeze, the sun that appears on the skin and caresses the face. </p>
-          <span>– Jason, 10:30 am</span>
+          <span class="text-secondary">– Jason, 10:30 am</span>
         </div>
-        <div>
-          <span>432</span>
+        <div class="d-flex pb-3 gap-custom">
+          <span class="">432</span>
           <span>47</span>
         </div>
       </div>
@@ -101,7 +103,7 @@
 
     <section class="bg-white d-flex justify-content-between padding-inline py-3 fs-6">
       <span>Morning of Siberia</span>
-      <span class="post__time">
+      <span class="position-relative">
           <span>56 minutes ago</span>
           <button class="btn p-0 border-0">
             <img src="./img/icons/arrow-down.svg" alt="Open post" width="24" height="24"/>
