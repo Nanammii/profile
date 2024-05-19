@@ -1,3 +1,10 @@
+const routes = {
+  '#home': 'index.html',
+  '#map': 'map.html',
+  '#time': 'time.html',
+  '#profile': 'profile.html'
+}
+
 // Select active link
 document.addEventListener('DOMContentLoaded', () => {
   const location = window.location.href;
@@ -8,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 })
+
+// Routes
 
 
 
