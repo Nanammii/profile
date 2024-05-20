@@ -4,10 +4,6 @@
   grid-template-columns: 3fr 1fr;
 }
 
-.post__wrapper {
-  min-width: 1080px;
-}
-
 .post__time::before {
   content: "";
   position: absolute;
@@ -19,6 +15,7 @@
 }
 
 .post__image {
+  max-width: 1016px;
   max-height: 424px;
 }
 
@@ -12019,7 +12016,7 @@ textarea.form-control-lg {
 }
 
 .aside-width {
-  width: 264px;
+  max-width: 264px;
 }
 
 .fs-7 {
@@ -12879,7 +12876,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1320px;
+    max-width: 1440px;
   }
 }
 :root {
