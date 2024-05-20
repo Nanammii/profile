@@ -12026,17 +12026,11 @@ textarea.form-control-lg {
   font-size: 18px;
 }
 
-.header {
-  background-color: #ffffff;
-}
-
 .header__wrapper {
-  padding: 8px 32px;
-  margin-bottom: -1px;
+  margin-bottom: 1px;
 }
 
 .header__link-back {
-  position: relative;
   padding-left: 32px;
   font-size: 18px;
 }
@@ -12051,17 +12045,10 @@ textarea.form-control-lg {
 }
 
 .header__wrapper-bottom {
-  padding: 0 32px;
-  background-color: #fafafa;
   margin-bottom: 32px;
 }
 
-.header__list {
-  gap: 32px;
-}
-
 .menu__link {
-  position: relative;
   padding-top: 32px;
 }
 .menu__link::before {
@@ -23991,7 +23978,7 @@ textarea.form-control-lg {
 }
 body {
   width: 100%;
-  min-width: 1440px;
+  max-width: 1440px;
   min-height: 100%;
 }
 

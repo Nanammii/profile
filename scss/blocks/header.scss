@@ -1,14 +1,8 @@
-.header {
-  background-color: #ffffff;
-}
-
 .header__wrapper {
-  padding: 8px 32px;
-  margin-bottom: -1px;
+  margin-bottom: 1px;
 }
 
 .header__link-back {
-  position: relative;
   padding-left: 32px;
   font-size: 18px;
 
@@ -24,17 +18,10 @@
 }
 
 .header__wrapper-bottom {
-  padding: 0 32px;
-  background-color: #fafafa;
   margin-bottom: 32px;
 }
 
-.header__list {
-  gap: 32px;
-}
-
 .menu__link {
-  position: relative;
   padding-top: 32px;
 
   &::before {
