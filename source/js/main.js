@@ -1,8 +1,8 @@
 const routes = {
-  '#home': 'index.html',
-  '#map': 'map.html',
-  '#time': 'time.html',
-  '#profile': 'profile.html'
+  'home': 'index.html',
+  'map': 'map.html',
+  'time': 'time.html',
+  'profile': 'profile.html'
 }
 
 // Select active link
@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-// Routes
+const handleCloseField = (element) => {
+  element.classList.add('d-none')
+}
 
 
 
