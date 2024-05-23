@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../source/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=74548dbc-d9dc-4759-915f-d378ac73a45c&lang=ru_RU"
-          type="text/javascript">
-  </script>
   <title>Title</title>
 </head>
 <body class="container p-0">
 <header class="header bg-white">
   <div class="header__wrapper d-flex flex-wrap justify-content-between shadow padding-inline py-2">
-    <a class="header__link-back align-self-center d-sm-block position-relative" href="profile.html">
+    <a class="header__link-back align-self-center d-sm-block position-relative" href="#profile">
       <span class="fw-medium">User pages</span> - Profile
     </a>
     <ul class="d-flex gap-custom">
@@ -36,13 +33,13 @@
     <nav class="d-flex justify-content-between w-100 flex-wrap">
       <ul class="d-flex flex-wrap">
         <li>
-          <a class="navigation__link d-block position-relative" href="index.html">Activity</a>
+          <a class="navigation__link d-block position-relative" href="#index">Activity</a>
         </li>
         <li>
-          <a class="navigation__link navigation__link--map d-block position-relative" href="map.html">Map</a>
+          <a class="navigation__link navigation__link--map d-block position-relative" href="#map">Map</a>
         </li>
         <li>
-          <a class="navigation__link navigation__link--time d-block position-relative" href="time.html">Time</a>
+          <a class="navigation__link navigation__link--time d-block position-relative" href="#time">Time</a>
         </li>
       </ul>
       <ul class="d-flex flex-wrap">
@@ -57,40 +54,43 @@
         </li>
         <li>
           <a class="link-settings d-block position-relative" href="#">
-            <img src="./img/icons/arrow-down.svg" alt="Arrow down" />
+            <img src="../source/img/icons/arrow-down.svg" alt="Arrow down" />
           </a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
-
 <main class="padding-inline">
   <section class="d-flex flex-column bg-white pb-3">
     <div class="d-flex justify-content-between align-items-center padding-inline py-3 fs-6">
-      <span>Basic map</span>
+      <span>Timer</span>
       <div class="d-flex gap-2">
-        <button class="btn p-0 border-0">
-          <img src="./img/icons/arrow-down.svg" alt="Open map" width="24" height="24"/>
+        <button class="btn p-0 border-0" id="open">
+          <img src="../source/img/icons/arrow-down.svg" alt="Open timer" width="24" height="24"/>
         </button>
-        <button class="btn p-0 border-0">
-          <img src="./img/icons/update-icon.svg" alt="Update map" width="24" height="24"/>
+        <button class="btn p-0 border-0" id="update">
+          <img src="../source/img/icons/update-icon.svg" alt="Update timer" width="24" height="24"/>
         </button>
-        <button class="btn p-0 border-0">
-          <img src="./img/icons/close-icon.svg" alt="Close map" width="24" height="24"/>
+        <button class="btn p-0 border-0" id="close">
+          <img src="../source/img/icons/close-icon.svg" alt="Close timer" width="24" height="24"/>
         </button>
       </div>
     </div>
 
-    <div class="map__wrapper d-flex justify-content-center align-items-center padding-inline pb-3">
-      <div class="map__loader"></div>
-      <div class="map__container w-100 d-none" id="map"></div>
+    <div class="d-flex justify-content-center align-items-center padding-inline pb-3"  id="timer">
+      <div class="w-100 pt-3">
+        <span id="hours">00</span>
+        :
+        <span id="minutes">00</span>
+        :
+        <span id="seconds">00</span>
+      </div>
     </div>
   </section>
 </main>
 
-
-<script src="js/map.js" type="module"></script>
-<script src="js/main.js" type="module"></script>
+<script src="../source/js/timer.js" type="module"></script>
+<script src="../source/js/main.js" type="module"></script>
 </body>
 </html>

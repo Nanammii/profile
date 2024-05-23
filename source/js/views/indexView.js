@@ -1,72 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=74548dbc-d9dc-4759-915f-d378ac73a45c&lang=ru_RU"
-          type="text/javascript">
-  </script>
-  <title>Profile</title>
-</head>
-<body class="container p-0">
-<header class="header bg-white">
-  <div class="header__wrapper d-flex flex-wrap justify-content-between shadow padding-inline py-2">
-    <a class="header__link-back align-self-center d-sm-block position-relative" href="#profile">
-      <span class="fw-medium">User pages</span> - Profile
-    </a>
-    <ul class="d-flex gap-custom">
-      <li>
-        <a class="menu__link d-sm-block position-relative d-block">Statistics</a>
-      </li>
-      <li>
-        <a class="menu__link menu__link--invoices d-sm-block position-relative d-block">Invoices</a>
-      </li>
-      <li>
-        <a class="menu__link menu__link--schedule d-sm-block position-relative d-block">Schedule</a>
-      </li>
-    </ul>
-  </div>
-  <div class="header__wrapper-bottom d-flex justify-content-between bg-light shadow padding-inline">
-    <nav class="d-flex justify-content-between w-100 flex-wrap">
-      <ul class="d-flex flex-wrap">
-        <li>
-          <a class="navigation__link d-block position-relative" href="#index">Activity</a>
-        </li>
-        <li>
-          <a class="navigation__link navigation__link--map d-block position-relative" href="#map">Map</a>
-        </li>
-        <li>
-          <a class="navigation__link navigation__link--time d-block position-relative" href="#time">Time</a>
-        </li>
-      </ul>
-      <ul class="d-flex flex-wrap">
-        <li>
-          <a class="navigation__link navigation__link--notes  d-block position-relative" href="#">Notes</a>
-        </li>
-        <li>
-          <a class="navigation__link navigation__link--people d-block position-relative" href="#">Friends</a>
-        </li>
-        <li>
-          <a class="navigation__link navigation__link--photos  d-block position-relative" href="#">Photos</a>
-        </li>
-        <li>
-          <a class="link-settings d-block position-relative" href="#">
-            <img src="./img/icons/arrow-down.svg" alt="Arrow down" />
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="padding-inline" id="main-container">
-  <div class="main-container d-flex flex-column flex-lg-row gap-custom row">
+const IndexView = {
+  render: function () {
+    return (
+    `<div class="main-container d-flex flex-column flex-lg-row gap-custom row">
     <div class="d-flex flex-column gap-custom p-0 col-lg-8 col-xxl-9">
       <section class="post bg-white">
         <div class="d-flex justify-content-between align-items-center padding-inline py-3 fs-6">
@@ -146,7 +81,7 @@
         </div>
         <ul class="aside__list d-flex flex-column w-100 gap-3 pb-3">
           <li>
-            <a class="aside__link" href="../public/profile.html">My profile</a>
+            <a class="aside__link" href="#profile">My profile</a>
           </li>
           <li>
             <a class="aside__link aside__link--balance d-flex justify-content-between">
@@ -188,12 +123,9 @@
         </form>
       </section>
     </aside>
-  </div>
+  </div>`
+    )
+  }
+}
 
-
-
-</main>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="module"></script>
-<script src="js/main.js" type="module"></script>
-</body>
-</html>
+export default IndexView;
