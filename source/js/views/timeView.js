@@ -39,10 +39,12 @@ const TimeView = {
     const updateButton = document.getElementById('update');
     const closeButton = document.getElementById('close');
 
-    let hours = 0o0,
-      minutes = 0o0,
-      seconds = 0o0,
-      interval
+    let interval;
+    let timerState = {
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+    }
 
     const handleStartTimer = () => {
       clearInterval(interval);
@@ -55,16 +57,15 @@ const TimeView = {
     }
 
     const clearTimer = () => {
-      hours = 0o0;
-      minutes = 0o0;
-      seconds = 0o0;
+      timerState.hours = 0;
+      timerState.minutes = 0;
+      timerState.seconds = 0;
       hoursElement.textContent = "00";
       minutesElement.textContent = "00";
       secondsElement.textContent = "00";
+      localStorage.removeItem('timerState');
     }
 
-
-    window.addEventListener('DOMContentLoaded', handleStartTimer);
     startButton.addEventListener('click', openTimer);
 
     updateButton.addEventListener('click', () => {
@@ -80,33 +81,55 @@ const TimeView = {
     })
 
     function startTimer() {
-      seconds++;
-      if (seconds <= 9) {
-        secondsElement.innerText = `0${seconds}`
+      timerState.seconds++;
+      if (timerState.seconds <= 9) {
+        secondsElement.innerText = `0${timerState.seconds}`
       }
-      if (seconds > 9) {
-        secondsElement.innerText = seconds
+      if (timerState.seconds > 9) {
+        secondsElement.innerText = timerState.seconds
       }
-      if (seconds > 59) {
-        minutes++;
-        minutesElement.innerText = `0${minutes}`
-        seconds = 0;
-        secondsElement.innerText = `0${seconds}`
+      if (timerState.seconds > 59) {
+        timerState.minutes++;
+        minutesElement.innerText = `0${timerState.minutes}`
+        timerState.seconds = 0;
+        secondsElement.innerText = `0${timerState.seconds}`
       }
 
-      if (minutes < 9) {
-        minutesElement.innerText = `0${minutes}`
+      if (timerState.minutes < 9) {
+        minutesElement.innerText = `0${timerState.minutes}`
       }
-      if (minutes > 9) {
-        minutesElement.innerText = minutes
+      if (timerState.minutes > 9) {
+        minutesElement.innerText = timerState.minutes
       }
-      if (minutes > 59) {
-        hours++
-        hoursElement.innerText = `0${hours}`
-        minutes = 0
-        minutesElement.innerText = `0${minutes}`
+      if (timerState.minutes > 59) {
+        timerState.hours++
+        hoursElement.innerText = `0${timerState.hours}`
+        timerState.minutes = 0
+        minutesElement.innerText = `0${timerState.minutes}`
       }
+
+      if (timerState.hours < 9) {
+        hoursElement.innerText = `0${timerState.hours}`
+      }
+      if (timerState.hours > 9) {
+        hoursElement.innerText = timerState.hours
+      }
+
+      localStorage.setItem('timerState', JSON.stringify(timerState));
     }
+
+    const savedState = JSON.parse(localStorage.getItem('timerState'));
+    console.log(savedState)
+    if (savedState) {
+      timerState.hours = savedState.hours;
+      timerState.minutes = savedState.minutes;
+      timerState.seconds = savedState.seconds;
+      hoursElement.innerText = timerState.hours < 10 ? `0${timerState.hours}` : timerState.hours;
+      minutesElement.innerText = timerState.minutes < 10 ? `0${timerState.minutes}` : timerState.minutes;
+      secondsElement.innerText = timerState.seconds < 10 ? `0${timerState.seconds}` : timerState.seconds;
+      handleStartTimer();
+    }
+
   }
 }
 

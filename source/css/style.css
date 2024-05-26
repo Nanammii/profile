@@ -23975,6 +23975,7 @@ textarea.form-control-lg {
 }
 body {
   width: 100%;
+  min-width: 375px;
   max-width: 1440px;
   min-height: 100%;
 }
