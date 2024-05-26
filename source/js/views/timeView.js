@@ -47,6 +47,7 @@ const TimeView = {
     }
 
     const handleStartTimer = () => {
+      localStorage.removeItem('timeState')
       clearInterval(interval);
       interval = setInterval(startTimer, 1000);
     }
@@ -130,6 +131,9 @@ const TimeView = {
       handleStartTimer();
     }
 
+    if (!interval) {
+      handleStartTimer();
+    }
   }
 }
 
