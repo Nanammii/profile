@@ -1,7 +1,7 @@
 const IndexView = {
   render: function () {
     return (
-    `<div class="main-container d-flex flex-column flex-lg-row gap-custom row">
+    `<div class="main-container d-flex flex-column flex-lg-row gap-custom row pb-5 m-0">
     <div class="d-flex flex-column gap-custom p-0 col-lg-8 col-xxl-9">
       <section class="post bg-white">
         <div class="d-flex justify-content-between align-items-center padding-inline py-3 fs-6">
