@@ -1,5 +1,5 @@
 const IndexView = {
-  render: function () {
+  render: () => {
     return (
     `<div class="main-container d-flex flex-column flex-lg-row gap-custom row pb-5 m-0">
     <div class="d-flex flex-column gap-custom p-0 col-lg-8 col-xxl-9">
