@@ -6,18 +6,18 @@ import ProfileView from "./views/profileView.js";
 const mainContainer = document.getElementById('main-container');
 
 export default {
-  indexRoute() {
+  index() {
     mainContainer.innerHTML = IndexView.render();
   },
-  mapRoute() {
+  map() {
     mainContainer.innerHTML = MapView.render();
     MapView.afterRender();
   },
-  timeRoute() {
+  time() {
     mainContainer.innerHTML = TimeView.render();
     TimeView.afterRender();
   },
-  profileRoute() {
+  profile() {
     mainContainer.innerHTML = ProfileView.render();
   }
 }
