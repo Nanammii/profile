@@ -1,0 +1,38 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$font-family-sans-serif: "Roboto", "Arial", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.14; // 16px / 14px
+$body-color: #505050;
+$body-bg: #f1f1f1;
+$primary: #5095ec;
+$secondary: #8f8f8f;
+$light: #fafafa;
+$border-color: #d3d8de;
+
+$box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+);
+
+.gap-custom {
+  gap: 32px;
+}
+
+.aside-width {
+  max-width: 264px;
+}
+
+.fs-7 {
+  font-size: 18px;
+}
+
+@import "blocks/header";
+
+@import "node_modules/bootstrap/scss/bootstrap";

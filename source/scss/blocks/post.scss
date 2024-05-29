@@ -1,0 +1,65 @@
+.post__time {
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -32px;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/time-check.svg") no-repeat;
+  }
+}
+
+.post__image {
+  max-width: 1016px;
+  max-height: 424px;
+}
+
+.post__title {
+  padding-left: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/comment-icon.svg") no-repeat;
+  }
+}
+
+.post__comment {
+  padding-left: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #d3d8de;
+  }
+}
+
+.post__icon {
+  padding-left: 32px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/eye-icon.svg") no-repeat;
+  }
+
+  &--comment::before {
+    background: url("../img/icons/comment-icon.svg") no-repeat;
+  }
+}

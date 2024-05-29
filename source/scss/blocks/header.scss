@@ -1,0 +1,97 @@
+.header__wrapper {
+  margin-bottom: 1px;
+}
+
+.header__link-back {
+  padding-left: 32px;
+  font-size: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -2px;
+    left: 0;
+    background: url("../img/icons/arrow-back.svg") no-repeat;
+  }
+}
+
+.header__wrapper-bottom {
+  margin-bottom: 32px;
+}
+
+.menu__link {
+  padding-top: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/statistics-icon.svg") no-repeat;
+  }
+
+  &--invoices::before {
+    background: url("../img/icons/invoices-icon.svg") no-repeat;
+  }
+
+  &--schedule::before {
+    background: url("../img/icons/schedule-icon.svg") no-repeat;
+  }
+}
+
+.navigation__link {
+  padding: 12px 16px 12px 44px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 16px;
+    background: url("../img/icons/activity-icon.svg") no-repeat;
+  }
+
+  &--map::before {
+    background: url("../img/icons/map-icon.svg") no-repeat;
+  }
+
+  &--time::before {
+    background: url("../img/icons/time-icon.svg") no-repeat;
+  }
+
+  &--notes::before {
+    background: url("../img/icons/notes-icon.svg") no-repeat;
+  }
+
+  &--people::before {
+    background: url("../img/icons/people-icon.svg") no-repeat;
+  }
+
+  &--photos::before {
+    background: url("../img/icons/photos-icon.svg") no-repeat;
+  }
+
+  &:hover,
+  &--active {
+    background-color: #f1f1f1;
+  }
+}
+
+.link-settings {
+  padding: 8px 8px 8px 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 8px;
+    background: url("../img/icons/settings-icon.svg") no-repeat;
+  }
+}

@@ -1,0 +1,69 @@
+.profile__image {
+  width: 132px;
+  height: 132px;
+}
+
+.aside__wrapper {
+  padding: 8px 16px 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #d3d8de;
+  }
+}
+
+.aside__list {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #d3d8de;
+  }
+}
+
+.aside__link {
+  display: block;
+  position: relative;
+  padding: 4px 16px 4px 56px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 16px;
+    background: url("../img/icons/person-icon.svg") no-repeat;
+  }
+
+  &--balance::before {
+    background: url("../img/icons/finance-icon.svg") no-repeat;
+  }
+
+  &--connections::before {
+    background: url("../img/icons/scheme-icon.svg") no-repeat;
+  }
+
+  &--friends::before {
+    background: url("../img/icons/people-icon.svg") no-repeat;
+  }
+
+  &--events::before {
+    background: url("../img/icons/calendar-icon.svg") no-repeat;
+  }
+
+  &--settings::before {
+    background: url("../img/icons/settings-icon.svg") no-repeat;
+  }
+}
